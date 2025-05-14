@@ -85,7 +85,7 @@
             font-family: 'Noto Sans KR', sans-serif;
         }
         .hero-bg {
-            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://placehold.co/1200x600/F97316/FFFFFF?text=오렌지Pay+상품권'); /* Placeholder image with OrangePay branding */
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/cul.jpg'); /* 기본값, JS에서 동적으로 변경 */
             background-size: cover;
             background-position: center;
         }
@@ -378,6 +378,24 @@
                      window.scrollTo({ top: 0, behavior: "smooth" });
                 }
             });
+        });
+
+        // 배경 이미지 랜덤 적용
+        document.addEventListener('DOMContentLoaded', function() {
+            var bgImages = [
+                'images/cul.jpg',
+                'images/googel5.jpg',
+                'images/sin10.jpg',
+                'images/lotte10.jpg',
+                'images/st5.jpg',
+                'images/dosu5.jpg',
+                'images/tin.jpg'
+            ];
+            var pick = bgImages[Math.floor(Math.random() * bgImages.length)];
+            var heroSection = document.querySelector('.hero-bg');
+            if(heroSection) {
+                heroSection.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('" + pick + "')";
+            }
         });
     </script>
 
