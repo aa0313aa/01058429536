@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>오렌지Pay 소식</title>
+    <link>https://orangepay.com/</link>
+    <description>오렌지Pay의 최신 소식과 공지, 이벤트 안내</description>
+    <language>ko</language>
+    <lastBuildDate>Tue, 14 May 2025 09:00:00 +0900</lastBuildDate>
+    <item>
+      <title>365일 24시간 상품권 매입 서비스 안내</title>
+      <link>https://orangepay.com/#services</link>
+      <description>오렌지Pay는 연중무휴 24시간 상품권 매입 서비스를 제공합니다. 빠른 입금과 안전한 거래를 경험하세요.</description>
+      <pubDate>Tue, 14 May 2025 09:00:00 +0900</pubDate>
+      <guid>https://orangepay.com/#services</guid>
+    </item>
+    <item>
+      <title>신용카드현금화, 휴대폰소액결제, 네이버포인트 결제 안내</title>
+      <link>https://orangepay.com/#gift-payment</link>
+      <description>다양한 결제수단으로 상품권을 간편하게 구매할 수 있습니다.</description>
+      <pubDate>Tue, 14 May 2025 09:00:00 +0900</pubDate>
+      <guid>https://orangepay.com/#gift-payment</guid>
+    </item>
+  </channel>
+</rss>

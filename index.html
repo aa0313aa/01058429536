@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오렌지Pay - 24시간 신속 상품권 매입 및 결제, 신용카드현금화, 휴대폰소액결제</title>
+    <meta name="description" content="오렌지Pay는 365일 24시간 신속한 상품권 매입, 신용카드현금화, 휴대폰소액결제, 네이버포인트 결제 서비스를 제공합니다. 평균 5분 이내 입금, 안전한 거래, 업계 최고가 매입률 보장!">
+    <meta name="keywords" content="오렌지Pay, 상품권 매입, 신용카드현금화, 휴대폰소액결제, 네이버포인트, 구글기프트카드, 컬쳐랜드, 신세계상품권, 롯데상품권, 스타벅스, 해피머니, S-OIL, 24시간, 빠른입금, 안전거래">
+    <meta name="author" content="오렌지Pay">
+    <link rel="canonical" href="https://orangepay.com/">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="theme-color" content="#F97316">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <link rel="alternate" type="application/rss+xml" title="오렌지Pay 소식 RSS" href="/rss.xml">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://orangepay.com/">
+    <meta property="og:title" content="오렌지Pay - 24시간 신속 상품권 매입 및 결제, 신용카드현금화, 휴대폰소액결제">
+    <meta property="og:description" content="365일 24시간 신속한 상품권 매입, 신용카드현금화, 휴대폰소액결제, 네이버포인트 결제 서비스. 평균 5분 이내 입금, 안전한 거래, 업계 최고가 매입률 보장!">
+    <meta property="og:image" content="https://placehold.co/1200x630/F97316/FFFFFF?text=오렌지Pay+상품권">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://orangepay.com/">
+    <meta name="twitter:title" content="오렌지Pay - 24시간 신속 상품권 매입 및 결제, 신용카드현금화, 휴대폰소액결제">
+    <meta name="twitter:description" content="365일 24시간 신속한 상품권 매입, 신용카드현금화, 휴대폰소액결제, 네이버포인트 결제 서비스. 평균 5분 이내 입금, 안전한 거래, 업계 최고가 매입률 보장!">
+    <meta name="twitter:image" content="https://placehold.co/1200x630/F97316/FFFFFF?text=오렌지Pay+상품권">
+    <!-- JSON-LD 구조화 데이터 (Organization) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "오렌지Pay",
+      "url": "https://orangepay.com/",
+      "logo": "https://placehold.co/300x300/F97316/FFFFFF?text=오렌지Pay",
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+82-10-5842-9536",
+        "contactType": "customer service",
+        "areaServed": "KR",
+        "availableLanguage": ["Korean"]
+      }],
+      "sameAs": [
+        "https://pf.kakao.com/_SBFexb"
+      ]
+    }
+    </script>
+    <!-- FAQ 구조화 데이터 (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "오렌지Pay는 어떤 서비스를 제공하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "오렌지Pay는 24시간 상품권 매입, 신용카드현금화, 휴대폰소액결제, 네이버포인트 결제 등 다양한 서비스를 제공합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "상품권 매입은 얼마나 빨리 입금되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "평균 5분 이내로 신속하게 입금해 드립니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "365일 24시간 상담이 가능한가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네, 연중무휴 24시간 언제든지 상담 및 거래가 가능합니다."
+          }
+        }
+      ]
+    }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://placehold.co/1200x600/F97316/FFFFFF?text=오렌지Pay+상품권'); /* Placeholder image with OrangePay branding */
+            background-size: cover;
+            background-position: center;
+        }
+        .section-title {
+            font-weight: 900; /* Extra bold for titles */
+            font-size: 2.25rem; /* Equivalent to text-4xl */
+            margin-bottom: 1.5rem; /* Equivalent to mb-6 */
+        }
+        .highlight {
+            color: #F97316; /* Orange-500 for OrangePay */
+        }
+        .card { /* General card style for non-link cards */
+            background-color: white;
+            border-radius: 0.75rem; /* rounded-xl */
+            padding: 1.5rem; /* p-6 */
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05); /* shadow-lg */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04); /* Enhanced shadow on hover */
+        }
+        
+        /* Styling for cards that are links */
+        .linked-card {
+            display: block;
+            background-color: white;
+            border-radius: 0.75rem; /* rounded-xl */
+            padding: 1.5rem; /* p-6 */
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05); /* shadow-lg */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+            color: #374151; /* Default text color (gray-700) */
+        }
+        .linked-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+            color: #F97316; /* Highlight color on hover */
+        }
+        .linked-card:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.5); /* Focus ring with highlight color */
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem; /* py-3 px-6 */
+            border-radius: 0.5rem; /* rounded-lg */
+            font-weight: 700; /* font-bold */
+            transition: background-color 0.3s ease;
+            text-align: center;
+            display: inline-block; 
+        }
+        .btn-primary {
+            background-color: #F97316; /* Orange-500 */
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #EA580C; /* Orange-600 */
+        }
+        .btn-secondary {
+            background-color: #1F2937; /* gray-800 */
+            color: white;
+        }
+        .btn-secondary:hover {
+            background-color: #374151; /* gray-700 */
+        }
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 5px #F97316, 0 0 10px #F97316; }
+            50% { box-shadow: 0 0 15px #FB923C, 0 0 25px #FB923C; } 
+        }
+        .pulse-glow-button {
+            animation: pulse-glow 2s infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-gray-900 text-white p-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold tracking-tight">🍊 오렌지Pay</a>
+            <nav class="hidden md:block">
+                <a href="#services" class="px-3 py-2 hover:bg-orange-500 rounded-md">서비스 안내 (매입)</a>
+                <a href="#gift-payment" class="px-3 py-2 hover:bg-orange-500 rounded-md">상품권 결제</a>
+                <a href="#process" class="px-3 py-2 hover:bg-orange-500 rounded-md">이용 절차 (매입)</a>
+                <a href="#contact" class="px-3 py-2 hover:bg-orange-500 rounded-md">문의하기</a>
+            </nav>
+            <button id="mobileMenuButton" class="md:hidden text-2xl">☰</button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-gray-800">
+            <a href="#services" class="block px-4 py-3 text-center hover:bg-orange-500">서비스 안내 (매입)</a>
+            <a href="#gift-payment" class="block px-4 py-3 text-center hover:bg-orange-500">상품권 결제</a>
+            <a href="#process" class="block px-4 py-3 text-center hover:bg-orange-500">이용 절차 (매입)</a>
+            <a href="#contact" class="block px-4 py-3 text-center hover:bg-orange-500">문의하기</a>
+        </div>
+    </header>
+
+    <section class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-4xl md:text-6xl font-black mb-4 leading-tight">
+                <span class="highlight">365일 24시간</span> 상품권 <span class="highlight">총알 매입 & 간편 결제!</span>
+            </h2>
+            <p class="text-lg md:text-2xl mb-8 max-w-2xl mx-auto">
+                매입 상담부터 입금까지 <span class="font-bold text-orange-300 text-xl md:text-3xl">단 5분!</span> <br class="sm:hidden"> 휴대폰, 네이버포인트, 신용카드로 상품권 구매도 간편하게!
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://pf.kakao.com/_SBFexb/chat" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-lg md:text-xl pulse-glow-button w-full sm:w-auto">
+                    💬 카톡 매입 문의
+                </a>
+                <a href="#gift-payment" class="btn bg-white text-orange-500 hover:bg-orange-100 text-lg md:text-xl w-full sm:w-auto">
+                    💳 상품권 결제하러 가기
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center text-gray-800">왜 <span class="highlight">오렌지Pay</span>인가? (상품권 매입)</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card">
+                    <div class="text-5xl mb-4 text-orange-500">⏱️</div>
+                    <h3 class="text-2xl font-bold mb-2">초스피드 입금</h3>
+                    <p class="text-gray-600">업계 최고 속도! 평균 5분 이내 입금 완료. 기다림은 이제 그만!</p>
+                </div>
+                <div class="card">
+                    <div class="text-5xl mb-4 text-orange-500">🛡️</div>
+                    <h3 class="text-2xl font-bold mb-2">안전 보장 시스템</h3>
+                    <p class="text-gray-600">정식 등록 업체! 고객님의 정보를 소중하게 생각하며, 안전 거래를 최우선으로 합니다.</p>
+                </div>
+                <div class="card">
+                    <div class="text-5xl mb-4 text-orange-500">🌙</div>
+                    <h3 class="text-2xl font-bold mb-2">365일 24시간 운영</h3>
+                    <p class="text-gray-600">새벽에도, 주말에도, 공휴일에도! 언제든지 필요할 때 바로 이용 가능합니다.</p>
+                </div>
+                <div class="card">
+                    <div class="text-5xl mb-4 text-orange-500">💸</div>
+                    <h3 class="text-2xl font-bold mb-2">최고가 매입</h3>
+                    <p class="text-gray-600">업계 최고 수준의 매입률을 약속드립니다. 만족스러운 가격으로 거래하세요.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gift-payment" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center text-gray-800">휴대폰결제 네이버포인트 신용카드 결제 가능한 <br class="sm:hidden"><span class="highlight">상품권 결제하러가기</span></h2>
+            <p class="text-center text-gray-600 mb-10 max-w-xl mx-auto">아래 상품권을 클릭하시면 휴대폰 소액결제, 네이버포인트, 신용카드 등으로 안전하게 구매할 수 있는 페이지로 이동합니다.</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                <a href="https://smartstore.naver.com/sk6070/products/11829086247" target="_blank" rel="noopener noreferrer" class="linked-card">
+                    <img src="images/cul.jpg" alt="컬쳐랜드 상품권 이미지" class="mx-auto mb-3 h-30 object-contain" onerror="this.src='https://placehold.co/100x60/FDE68A/4B5563?text=Error'; this.onerror=null;">
+                    <p class="font-semibold">컬쳐랜드</p>
+                </a>
+                <a href="https://gift.kakao.com/product/10137242" target="_blank" rel="noopener noreferrer" class="linked-card">
+                    <img src="images/googel5.jpg" alt="구글플레이 기프트카드 이미지" class="mx-auto mb-3 h-30 object-contain" onerror="this.src='https://placehold.co/100x60/BFDBFE/4B5563?text=Error'; this.onerror=null;">
+                    <p class="font-semibold">구글플레이</p>
+                </a>
+                <a href="https://smartstore.naver.com/4989z/products/11263002533?nl-query=%EC%8B%A0%EC%84%B8%EA%B3%84%EB%B0%B1%ED%99%94%EC%A0%90%20%ED%9C%B4%EB%8C%80%ED%8F%B0%EA%B2%B0%EC%A0%9C&frm=NVSCPSI&nl-ts-pid=jueqedpzL8VssD3pJnGssssssVG-052277&NaPm=ci%3DjueqedpzL8VssD3pJnGssssssVG-052277%7Cct%3Dmanrzaha%7Ctr%3Dnsls%7Csn%3D6591655%7Chk%3Ddc0c0e37832f1913d9381fcc8ca6cce2cb410108" target="_blank" rel="noopener noreferrer" class="linked-card">
+                    <img src="images/sin10.jpg" alt="신세계 상품권 이미지" class="mx-auto mb-3 h-30 object-contain" onerror="this.src='https://placehold.co/100x60/4B5563/FFFFFF?text=Error'; this.onerror=null;">
+                    <p class="font-semibold">신세계 상품권</p>
+                </a>
+                <a href="https://smartstore.naver.com/4989z/products/11320697570" target="_blank" rel="noopener noreferrer" class="linked-card">
+                    <img src="images/lotte10.jpg" alt="롯데 상품권 이미지" class="mx-auto mb-3 h-30 object-contain" onerror="this.src='https://placehold.co/100x60/4B5563/FFFFFF?text=Error'; this.onerror=null;">
+                    <p class="font-semibold">롯데 상품권</p>
+                </a>
+                <a href="https://litt.ly/aa0313" target="_blank" rel="noopener noreferrer" class="linked-card">
+                    <img src="images/st5.jpg" alt="스타벅스 기프트카드 이미지" class="mx-auto mb-3 h-30 object-contain" onerror="this.src='https://placehold.co/100x60/A5F3FC/4B5563?text=Error'; this.onerror=null;">
+                    <p class="font-semibold">스타벅스</p>
+                </a>
+                <a href="https://smartstore.naver.com/4989z/products/11594692124" target="_blank" rel="noopener noreferrer" class="linked-card">
+                    <img src="images/dosu5.jpg" alt="북앤라이프 상품권 이미지" class="mx-auto mb-3 h-30 object-contain" onerror="this.src='https://placehold.co/100x60/A7F3D0/4B5563?text=Error'; this.onerror=null;">
+                    <p class="font-semibold text-gray-700">북앤라이프</p>
+                </a>
+                <a href="https://smartstore.naver.com/4989z/products/11594692124" target="_blank" rel="noopener noreferrer" class="linked-card">
+                    <img src="images/tin.jpg" alt="틴캐시 상품권 이미지" class="mx-auto mb-3 h-30 object-contain" onerror="this.src='https://placehold.co/100x60/FBCFE8/4B5563?text=Error'; this.onerror=null;">
+                    <p class="font-semibold text-gray-700">틴캐시</p>
+                </a>
+                <div class="card">
+                    <div class="flex items-center justify-center h-30 text-gray-500 text-lg">휴대폰 신용카드 추가결제</div>
+                    <p class="font-semibold text-gray-700">추가 현금화</p>
+                </div>
+                <div class="card col-span-2 sm:col-span-1 md:col-span-1"> <div class="flex items-center justify-center h-16 text-gray-500 text-2xl">•••</div>
+                    <p class="font-semibold text-gray-700">기타 상품권 (매입문의)</p>
+                </div>
+            </div>
+            <p class="text-center mt-8 text-gray-600">위에 명시되지 않은 상품권 <span class="font-bold">매입</span>을 원하시면 <a href="#contact" class="text-orange-500 hover:underline font-semibold">여기를 클릭하여 문의</a>해주세요.</p>
+        </div>
+    </section>
+
+    <section id="process" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center text-gray-800">간편한 <span class="highlight">이용 절차 (상품권 매입)</span></h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="card">
+                    <div class="text-4xl font-bold text-orange-500 mb-3">STEP 1</div>
+                    <h3 class="text-xl font-semibold mb-2">상담 및 시세 확인</h3>
+                    <p class="text-gray-600">전화 또는 카카오톡으로 문의주시면 친절하게 상담해 드리고, 현재 매입 시세를 안내해 드립니다.</p>
+                </div>
+                <div class="card">
+                    <div class="text-4xl font-bold text-orange-500 mb-3">STEP 2</div>
+                    <h3 class="text-xl font-semibold mb-2">상품권 정보 전달</h3>
+                    <p class="text-gray-600">안내에 따라 상품권 핀번호 또는 이미지를 전달해주세요. (개인정보는 안전하게 보호됩니다)</p>
+                </div>
+                <div class="card">
+                    <div class="text-4xl font-bold text-orange-500 mb-3">STEP 3</div>
+                    <h3 class="text-xl font-semibold mb-2">확인 후 즉시 입금</h3>
+                    <p class="text-gray-600">상품권 확인 후 평균 5분 이내에 고객님 계좌로 신속하게 입금해 드립니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-orange-500 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="section-title text-white">지금 바로 <span class="text-gray-900">문의</span>하세요!</h2>
+            <p class="text-xl mb-8 max-w-xl mx-auto">상품권 매입 및 기타 궁금한 사항은 365일 24시간 언제나 친절하게 상담해 드립니다.</p>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white text-gray-800 p-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow">
+                    <h3 class="text-3xl font-bold mb-4">📞 전화 상담 (매입문의)</h3>
+                    <p class="text-2xl font-semibold text-orange-600 mb-4">010-5842-9536</p>
+                    <p class="text-gray-600 mb-4">(24시간 상담 가능)</p>
+                    <a href="tel:010-5842-9536" class="btn btn-secondary w-full">전화 걸기</a>
+                </div>
+                <div class="bg-white text-gray-800 p-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow">
+                    <h3 class="text-3xl font-bold mb-4">💬 카카오톡 상담 (매입문의)</h3>
+                    <p class="text-2xl font-semibold text-orange-600 mb-4">오렌지Pay 채널</p>
+                    <p class="text-gray-600 mb-4">(아래 버튼 클릭 시 바로 연결)</p>
+                    <a href="https://pf.kakao.com/_SBFexb/chat" target="_blank" rel="noopener noreferrer" class="btn btn-secondary w-full">카톡 채널 바로가기</a>
+                </div>
+            </div>
+            <p class="mt-12 text-sm text-orange-100">
+                ※ 주의: 거래와 무관한 문의나 장난 전화는 삼가주시기 바랍니다. <br>
+                ※ 과도한 문의는 상담 지연의 원인이 될 수 있습니다.
+            </p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-bold text-lg text-white mb-2">🍊 오렌지Pay 신용카드현금화 휴대폰소액결제</p>
+            <p class="text-sm mb-4">고객센터 (상품권 매입문의): 010-5842-9536 | 이메일: contact@orangepay.com (가상)</p>
+            <p class="text-xs">&copy; <span id="currentYear"></span> 오렌지Pay. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobileMenuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (link.getAttribute('href').startsWith('#')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                // Ensure the target element exists
+                if (targetId && targetId !== "#") { // Check if targetId is not just "#"
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const headerOffset = document.querySelector('header').offsetHeight;
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: "smooth"
+                        });
+                    } else {
+                        // Fallback for the main page link if target is just "#"
+                         window.scrollTo({ top: 0, behavior: "smooth" });
+                    }
+                } else if (targetId === "#") { // Handle clicking on the logo or a link with href="#"
+                     window.scrollTo({ top: 0, behavior: "smooth" });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
