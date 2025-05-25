@@ -7,7 +7,7 @@
     <meta name="description" content="오렌지Pay는 365일 24시간 신속한 상품권 매입, 신용카드현금화, 휴대폰소액결제, 네이버포인트 결제 서비스를 제공합니다. 평균 5분 이내 입금, 안전한 거래, 업계 최고가 매입률 보장!">
     <meta name="keywords" content="오렌지Pay, 상품권 매입, 신용카드현금화, 휴대폰소액결제, 네이버포인트, 구글기프트카드, 컬쳐랜드, 신세계상품권, 롯데상품권, 스타벅스, 해피머니, S-OIL, 24시간, 빠른입금, 안전거래">
     <meta name="author" content="오렌지Pay">
-    <link rel="canonical" href="https://aa0313aa.github.io/01058429536/">
+    <link rel="canonical" href="https://현금화.store/">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <meta name="theme-color" content="#F97316">
@@ -16,23 +16,23 @@
     <meta name="google-site-verification" content="xaEslxli9C_HME93n2tmaFqZY4Kd2ELUGYh2JjAQfe8" />
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://aa0313aa.github.io/01058429536/">
+    <meta property="og:url" content="https://현금화.store/">
     <meta property="og:title" content="오렌지Pay - 24시간 신속 상품권 매입 및 결제, 신용카드현금화, 휴대폰소액결제">
     <meta property="og:description" content="365일 24시간 신속한 상품권 매입, 신용카드현금화, 휴대폰소액결제, 네이버포인트 결제 서비스. 평균 5분 이내 입금, 안전한 거래, 업계 최고가 매입률 보장!">
-    <meta property="og:image" content="https://aa0313aa.github.io/01058429536/images/cul.jpg">
+    <meta property="og:image" content="https://현금화.store/images/cul.jpg">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://aa0313aa.github.io/01058429536/">
+    <meta name="twitter:url" content="https://현금화.store/">
     <meta name="twitter:title" content="오렌지Pay - 24시간 신속 상품권 매입 및 결제, 신용카드현금화, 휴대폰소액결제">
     <meta name="twitter:description" content="365일 24시간 신속한 상품권 매입, 신용카드현금화, 휴대폰소액결제, 네이버포인트 결제 서비스. 평균 5분 이내 입금, 안전한 거래, 업계 최고가 매입률 보장!">
-    <meta name="twitter:image" content="https://aa0313aa.github.io/01058429536/images/cul.jpg">
+    <meta name="twitter:image" content="https://현금화.store/images/cul.jpg">
     <!-- JSON-LD 구조화 데이터 (Organization) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "오렌지Pay",
-      "url": "https://aa0313aa.github.io/01058429536/",
+      "url": "https://현금화.store/",
       "logo": "https://placehold.co/300x300/F97316/FFFFFF?text=오렌지Pay",
       "contactPoint": [{
         "@type": "ContactPoint",
@@ -163,6 +163,34 @@
             animation: pulse-glow 2s infinite;
         }
     </style>
+    <!-- 최신 SEO 최적화 코드 추가 -->
+    <!-- 1. robots meta -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <!-- 2. alternate hreflang (한국어만, 필요시 추가) -->
+    <link rel="alternate" href="https://현금화.store/" hreflang="ko" />
+    <!-- 3. Schema.org WebSite 구조화 데이터 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "오렌지Pay",
+      "url": "https://현금화.store/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://현금화.store/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <!-- 4. canonical, og, twitter 등은 이미 최신화됨 -->
+    <!-- 5. favicon sizes for PWA/SEO -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- 6. preload 폰트/이미지 (LCP 개선) -->
+    <link rel="preload" as="image" href="/images/cul.jpg">
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/notosanskr/v27/Pby6FmXiEBPT4ITbgNA5CgmOelzI.woff2" type="font/woff2" crossorigin>
+    <!-- 7. viewport, theme-color, description 등은 이미 적용됨 -->
 </head>
 <body class="bg-gray-100 text-gray-800">
 
@@ -426,6 +454,17 @@
                 heroSection.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('" + pick + "')";
             }
         });
+    </script>
+
+    <script>
+        // Cordova setup instructions
+        console.log(`
+            npm install -g cordova
+            cordova create orangepay-app
+            cd orangepay-app
+            cordova platform add android
+            cordova build android
+        `);
     </script>
 
 </body>
