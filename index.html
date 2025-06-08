@@ -144,8 +144,9 @@
       ]
     }
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Google Fonts preload & non-blocking -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap"></noscript>
     <style>
         body {
             font-family: 'Noto Sans KR', sans-serif;
@@ -349,52 +350,53 @@
             <h2 class="section-title text-center text-gray-800">휴대폰결제 네이버포인트 카드 결제 가능한 <br class="sm:hidden"><span class="highlight">상품권 결제하러가기</span></h2>
             <p class="text-center text-gray-600 mb-10 max-w-xl mx-auto">아래 상품권을 클릭하시면 휴대폰 소액결제, 네이버포인트, 카드 등으로 안전하게 구매할 수 있는 페이지로 이동합니다.</p>
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                <!-- 상품권 이미지에 width/height 속성 추가(CLS 개선) -->
                 <a href="https://smartstore.naver.com/sk6070/products/11829086247" target="_blank" rel="noopener noreferrer" class="linked-card">
                     <div class="relative">
-                        <span class="absolute top-2 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded z-20 shadow">매입가 90%</span>
-                        <img src="images/cul.jpg" alt="컬쳐랜드 상품권 이미지" loading="lazy" class="mx-auto mb-3 h-30 object-contain" onerror="this.src='https://placehold.co/100x60/FDE68A/4B5563?text=Error'; this.onerror=null;">
+                        <span class="absolute top-2 left-1/2 -translate-x-1/2 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded z-20 shadow">매입가 90%</span>
+                        <img src="images/cul.jpg" alt="컬쳐랜드 상품권 이미지" loading="lazy" width="100" height="60" class="mx-auto mb-3 h-30 object-contain" onerror="this.src='https://placehold.co/100x60/FDE68A/4B5563?text=Error'; this.onerror=null;">
                     </div>
                     <p class="font-semibold">컬쳐랜드</p>
                 </a>
                 <a href="https://gift.kakao.com/product/10137242" target="_blank" rel="noopener noreferrer" class="linked-card">
                     <div class="relative">
-                        <span class="absolute top-2 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded z-20 shadow">88% 매입</span>
-                        <img src="images/googel5.jpg" alt="구글기프트 코드 (교환권) 이미지" loading="lazy" class="mx-auto mb-3 h-30 object-contain" onerror="this.src='https://placehold.co/100x60/BFDBFE/4B5563?text=Error'; this.onerror=null;">
+                        <span class="absolute top-2 left-1/2 -translate-x-1/2 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded z-20 shadow">88% 매입</span>
+                        <img src="images/googel5.jpg" alt="구글기프트 코드 (교환권) 이미지" loading="lazy" width="100" height="60" class="mx-auto mb-3 h-30 object-contain" onerror="this.src='https://placehold.co/100x60/BFDBFE/4B5563?text=Error'; this.onerror=null;">
                     </div>
                     <p class="font-semibold">구글기프트 코드 (교환권)</p>
                 </a>
                 <div class="linked-card">
                     <div class="relative">
-                        <span class="absolute top-2 left-1/2 -translate-x-1/2 bg-gray-400 text-white text-xs font-bold px-3 py-1 rounded z-20 shadow">매입보류</span>
-                        <img src="images/sin10.jpg" alt="신세계 상품권 이미지" loading="lazy" class="mx-auto mb-3 h-30 object-contain" onerror="this.src='https://placehold.co/100x60/4B5563/FFFFFF?text=Error'; this.onerror=null;">
+                        <span class="absolute top-2 left-1/2 -translate-x-1/2 bg-gray-500 text-white text-xs font-bold px-3 py-1 rounded z-20 shadow">매입보류</span>
+                        <img src="images/sin10.jpg" alt="신세계 상품권 이미지" loading="lazy" width="100" height="60" class="mx-auto mb-3 h-30 object-contain" onerror="this.src='https://placehold.co/100x60/4B5563/FFFFFF?text=Error'; this.onerror=null;">
                     </div>
                     <p class="font-semibold">신세계 상품권</p>
                 </div>
                 <a href="https://litt.ly/aa0313" target="_blank" rel="noopener noreferrer" class="linked-card">
                     <div class="relative">
-                        <span class="absolute top-2 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded z-20 shadow">93% 매입</span>
-                        <img src="images/lotte10.jpg" alt="롯데 상품권 이미지" loading="lazy" class="mx-auto mb-3 h-30 object-contain" onerror="this.src='https://placehold.co/100x60/4B5563/FFFFFF?text=Error'; this.onerror=null;">
+                        <span class="absolute top-2 left-1/2 -translate-x-1/2 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded z-20 shadow">93% 매입</span>
+                        <img src="images/lotte10.jpg" alt="롯데 상품권 이미지" loading="lazy" width="100" height="60" class="mx-auto mb-3 h-30 object-contain" onerror="this.src='https://placehold.co/100x60/4B5563/FFFFFF?text=Error'; this.onerror=null;">
                     </div>
                     <p class="font-semibold">롯데 상품권</p>
                 </a>
                 <a href="https://smartstore.naver.com/sk6070/products/11786119834" target="_blank" rel="noopener noreferrer" class="linked-card">
                     <div class="relative">
-                        <span class="absolute top-2 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded z-20 shadow">85% 매입</span>
-                        <img src="images/st5.jpg" alt="스타벅스 기프트카드 이미지" loading="lazy" class="mx-auto mb-3 h-30 object-contain" onerror="this.src='https://placehold.co/100x60/A5F3FC/4B5563?text=Error'; this.onerror=null;">
+                        <span class="absolute top-2 left-1/2 -translate-x-1/2 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded z-20 shadow">85% 매입</span>
+                        <img src="images/st5.jpg" alt="스타벅스 기프트카드 이미지" loading="lazy" width="100" height="60" class="mx-auto mb-3 h-30 object-contain" onerror="this.src='https://placehold.co/100x60/A5F3FC/4B5563?text=Error'; this.onerror=null;">
                     </div>
                     <p class="font-semibold">스타벅스</p>
                 </a>
                 <a href="https://smartstore.naver.com/4989z/products/11594692124" target="_blank" rel="noopener noreferrer" class="linked-card">
                     <div class="relative">
-                        <span class="absolute top-2 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded z-20 shadow">90% 매입</span>
-                        <img src="images/dosu5.jpg" alt="북앤라이프 상품권 이미지" loading="lazy" class="mx-auto mb-3 h-30 object-contain" onerror="this.src='https://placehold.co/100x60/A7F3D0/4B5563?text=Error'; this.onerror=null;">
+                        <span class="absolute top-2 left-1/2 -translate-x-1/2 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded z-20 shadow">90% 매입</span>
+                        <img src="images/dosu5.jpg" alt="북앤라이프 상품권 이미지" loading="lazy" width="100" height="60" class="mx-auto mb-3 h-30 object-contain" onerror="this.src='https://placehold.co/100x60/A7F3D0/4B5563?text=Error'; this.onerror=null;">
                     </div>
                     <p class="font-semibold text-gray-700">북앤라이프</p>
                 </a>
                 <a href="https://smartstore.naver.com/4989z/products/11594192295" target="_blank" rel="noopener noreferrer" class="linked-card">
                     <div class="relative">
-                        <span class="absolute top-2 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded z-20 shadow">88% 매입</span>
-                        <img src="images/tin.jpg" alt="틴캐시 상품권 이미지" loading="lazy" class="mx-auto mb-3 h-30 object-contain" onerror="this.src='https://placehold.co/100x60/FBCFE8/4B5563?text=Error'; this.onerror=null;">
+                        <span class="absolute top-2 left-1/2 -translate-x-1/2 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded z-20 shadow">88% 매입</span>
+                        <img src="images/tin.jpg" alt="틴캐시 상품권 이미지" loading="lazy" width="100" height="60" class="mx-auto mb-3 h-30 object-contain" onerror="this.src='https://placehold.co/100x60/FBCFE8/4B5563?text=Error'; this.onerror=null;">
                     </div>
                     <p class="font-semibold text-gray-700">틴캐시</p>
                 </a>
@@ -578,6 +580,9 @@
             cordova build android
         `);
     </script>
+
+    <!-- Tailwind CSS CDN (defer 적용) -->
+    <script src="https://cdn.tailwindcss.com" defer></script>
 
 </body>
 </html>
